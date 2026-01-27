@@ -1,3 +1,6 @@
+// untuk mendapatkan model disini convert respon dari backend ke dart menggunakan https://app.quicktype.io/
+// respon didapat dari backend api run di localhost/api/endpoint
+
 class UserModel {
   int id;
   String username;
@@ -20,8 +23,8 @@ class UserModel {
     username: json["username"],
     email: json["email"],
     emailVerifiedAt: json["email_verified_at"],
-    createdAt: DateTime.parse(json["created_at"]),
-    updatedAt: DateTime.parse(json["updated_at"]),
+    createdAt: DateTime.parse(json["created_at"]).toLocal(),
+    updatedAt: DateTime.parse(json["updated_at"]).toLocal(),
   );
 
   Map<String, dynamic> toJson() => {
