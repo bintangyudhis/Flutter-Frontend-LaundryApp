@@ -7,9 +7,13 @@ environment:
   sdk: ^3.10.7
 
 dependencies:
+  d_method: ^0.2.6
   flutter:
     sdk: flutter
   google_fonts: ^8.0.0
+  http: ^1.6.0
+  intl: ^0.18.1
+  shared_preferences: ^2.5.4
 
 dev_dependencies:
   flutter_test:
